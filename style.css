@@ -25,7 +25,9 @@ body {
 }
 
 img[src="bg-leaves.jpg"] {
-  max-width: 110%;
+  width: 122%;
+  min-height: 100vh;
+  margin-left: -50px;
 }
 
 .logo {
@@ -34,7 +36,7 @@ img[src="bg-leaves.jpg"] {
   align-items: center;
   background-color: rgba(0,0,0,0.3);
   color: white;
-  top: 9rem;
+  top: 9.5rem;
   width: 100%;
   position: absolute;
   z-index: 9;
