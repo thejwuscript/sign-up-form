@@ -1,0 +1,27 @@
+body {
+  display: flex;
+  margin: 0;
+}
+
+.left {
+  height: 100vh;
+  width: 100vw;
+  flex: 4;
+  overflow: hidden;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  height:100vh;
+  width: 100vw;
+  flex: 6;
+}
+
+img {
+  max-width: 110%;
+}
+
+li {
+  list-style-type: none
+}
