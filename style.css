@@ -22,6 +22,8 @@ body {
   flex-direction: column;
   width: 100vw;
   flex: 6;
+  padding-left: 34px;
+  background-color: #fafafa;
 }
 
 img[src="bg-leaves.jpg"] {
@@ -41,13 +43,63 @@ img[src="bg-leaves.jpg"] {
   position: absolute;
   z-index: 9;
   font-family: norse-bold, sans-serif;
-  font-size: 90px;
+  font-size: 76px;
+  padding: 4px 0;
 }
 
 img[src="odin-lined.png"] {
-  width: 80px;
+  width: 72px;
 }
 
 li {
-  list-style-type: none
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
+
+.textbox {
+  display: flex;
+  flex-wrap: wrap;
+  width: 450px;
+  background-color: white;
+  gap: 12px;
+}
+
+section > ul {
+  flex: 1;
+  padding: 0;
+  margin: 0;
+}
+
+label {
+  font: .6rem sans-serif;
+  font-weight: bold;
+}
+
+input {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.forms-and-heading {
+  background-color: white;
+  margin-left: -34px;
+  padding-left: 34px;
+  padding-top: 20px;
+  padding-bottom: 22px;
+  box-shadow: 1px 3px 5px #d3d3d3;
+}
+
+.pitch {
+  margin-top: 100px;
+  font-weight: 900;
+  padding: 0;
+  margin-bottom: 24px;
+}
+
+  .right > p + p {
+    font-weight: 900;
+    padding: 0;
+    margin: 0 0 46px 0;
+  }
