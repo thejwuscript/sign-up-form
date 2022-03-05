@@ -21,32 +21,33 @@
       <form action = "" method="post">
         <div class="forms-and-heading">
           <strong>Let's do this!</strong>
-          <section class="textbox">
+          <fieldset class="textbox">
             <ul id="first">
               <li><label for="first-name">FIRST NAME</label></li>
-              <li><input type="text" id="first-name" name="first_name"></li>
+              <li><input type="text" minlength="2" id="first-name" name="first_name"></li>
             </ul>
             <ul id="last">
               <li><label for="last-name">LAST NAME</label></li>
-              <li><input type="text" id="last-name" name="last_name"></li>
+              <li><input type="text" minlength="2" id="last-name" name="last_name"></li>
             </ul>
             <ul id="mail">
               <li><label for="user_email">EMAIL</label></li>
-              <li><input type="email" id="user_email" name="email"></li>
+              <li><input type="email" id="user_email" name="email" ></li>
             </ul>
             <ul id="phone">
               <li><label for="phone-number">PHONE NUMBER</label></li>
-              <li><input type="tel" id="phone-number" name=""</li>
+              <li><input type="tel" id="phone-number" name="phone_number"></li>
             </ul>
             <ul id="pw">
               <li><label for="user_password">PASSWORD</label></li>
-              <li><input type="password" id="user_password" name="password"></li>
+              <li><input class="error" minlength="5" type="password" id="user_password" name="password" required><span></span></li>
+
             </ul>
             <ul id="confirm-pw">
               <li><label for="confirm_password">CONFIRM PASSWORD</label></li>
-              <li><input type="password" id="confirm_password"></li>
+              <li><input class="error" type="password" id="confirm_password" required></li>
             </ul>
-          </section>
+          </fieldset>
         </div>
         <button type="submit">Create Account</button>
       </form>

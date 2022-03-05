@@ -59,13 +59,21 @@ li {
 
 .textbox {
   display: flex;
+  position: relative;
   flex-wrap: wrap;
   width: 450px;
   background-color: white;
   gap: 12px;
+  margin-top: 8px;
 }
 
-section > ul {
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+fieldset > ul {
   flex: 1;
   padding: 0;
   margin: 0;
@@ -80,13 +88,39 @@ input {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  border: 1px solid #E5E7EB;
+  border-radius: 4px;
+  font: 14px sans-serif;
+  padding: 4px;
+  width: 200px;
+}
+
+input:valid {
+  border-color: green;
+}
+
+.error:invalid {
+  border-color: red;
+}
+
+.error:invalid + span::after {
+  content: "*Passwords do not match";
+  font-size: 9px;
+  color: darkred;
+  font-weight: bold;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid blue;
+  box-shadow: 1px 3px 5px #d3d3d3;
 }
 
 .forms-and-heading {
   background-color: white;
   margin-left: -34px;
   padding-left: 34px;
-  padding-top: 20px;
+  padding-top: 16px;
   padding-bottom: 22px;
   box-shadow: 1px 3px 5px #d3d3d3;
 }
@@ -98,18 +132,18 @@ input {
   margin-bottom: 24px;
 }
 
-  .right > p + p {
-    font-weight: 900;
-    padding: 0;
-    margin: 0 0 46px 0;
-  }
+.right > p + p {
+  font-weight: 900;
+  padding: 0;
+  margin: 0 0 46px 0;
+}
 
-  button {
-    background-color: #596D48;
-    color: white;
-    font-weight: 900;
-    margin-top: 24px;
-    padding: 12px 42px;
-    border-radius: 8px;
-    box-shadow: 2px 3px 5px #d3d3d3;
-  }
+button {
+  background-color: #596D48;
+  color: white;
+  font-weight: 900;
+  margin-top: 24px;
+  padding: 12px 42px;
+  border-radius: 8px;
+  box-shadow: 2px 3px 5px #d3d3d3;
+}
