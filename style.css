@@ -103,3 +103,13 @@ input {
     padding: 0;
     margin: 0 0 46px 0;
   }
+
+  button {
+    background-color: #596D48;
+    color: white;
+    font-weight: 900;
+    margin-top: 24px;
+    padding: 12px 42px;
+    border-radius: 8px;
+    box-shadow: 2px 3px 5px #d3d3d3;
+  }
